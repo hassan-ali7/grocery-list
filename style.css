@@ -1,0 +1,116 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+body.dark-mode .container {
+    background-color: #555;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#grocery-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#grocery-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.dark-mode #grocery-list li {
+    border-bottom: 1px solid #444;
+}
+
+.grocery-item {
+    display: flex;
+    align-items: center;
+}
+
+.grocery-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.purchased {
+    text-decoration: line-through;
+}
+
+#clear-list,
+#toggle-theme {
+    width: 100%;
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#clear-list:hover,
+#toggle-theme:hover {
+    background-color: #c82333;
+}
+
+#toggle-theme {
+    background-color: #6c757d;
+}
+
+#toggle-theme:hover {
+    background-color: #5a6268;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <Link href="style.css" rel="stylesheet">
+        <script defer src="index.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Grocery List</h1>
+        <form id="grocery-form">
+            <input type="text" id="grocery-input" placeholder="Enter grocery item">
+            <input type="number" id="quantity-input" placeholder="Quantity">
+            <select id="unit-input">
+                <option value="pieces">Pieces</option>
+                <option value="lbs">lbs</option>
+                <option value="packs">Packs</option>
+            </select>
+            <select id="category-input">
+                <option value="Dairy">Dairy</option>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Meat">Meat</option>
+                <option value="Fruits">Fruits</option>
+            </select>
+            <button type="submit">Add Item</button>
+        </form>
+        <input type="text" id="search-input" placeholder="Search items...">
+        <select id="filter-category">
+            <option value="All">All Categories</option>
+            <option value="Dairy">Dairy</option>
+            <option value="Vegetables">Vegetables</option>
+            <option value="Meat">Meat</option>
+            <option value="Fruits">Fruits</option>
+        </select>
+        <select id="filter-purchased">
+            <option value="All">All</option>
+            <option value="Purchased">Purchased</option>
+            <option value="Not Purchased">Not Purchased</option>
+        </select>
+        <button id="sort-alpha">Sort Alphabetically</button>
+        <button id="sort-category">Sort by Category</button>
+        <ul id="grocery-list"></ul>
+        <button id="clear-list">Clear List</button>
+        <button id="toggle-theme">Toggle Dark Mode</button>
+    </div>
+</body>
+</html>
